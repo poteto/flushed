@@ -1,6 +1,6 @@
-<ul>
+<ul class="margin-8">
   {{#each toilet in model}}
-    <li>
+    <li class="margin-4">
       {{#link-to 'toilet.show' toilet.id}}
         {{toilet.title}}
       {{/link-to}}
@@ -20,7 +20,6 @@
         {{#if toilet.babyChange}}
           <i class="fa"></i>
         {{/if}}
-
       </p>
     </li>
   {{/each}}
