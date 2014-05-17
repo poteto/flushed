@@ -10,7 +10,12 @@ var Toilet = DS.Model.extend({
   unisex: attr('boolean'),
   babyChange: attr('boolean'),
   ratings: hasMany('rating'),
-
+  sharps: attr('boolean'),
+  showers: attr('boolean'),
+  sanitaryDisposal: attr('boolean'),
+  drinkingWater: attr('boolean'),
+  geoX: attr('number'),
+  geoY: attr('number')
 });
 
 Toilet.reopenClass({
