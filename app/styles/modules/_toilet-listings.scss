@@ -30,3 +30,23 @@ li.toilet-li {
   font-weight: 300;
   font-size: 24px;
 }
+
+.rating-container {
+  i.fa {
+    cursor: pointer;
+  }
+  i.fa-sort-up {
+    position: absolute;
+    right: 33px;
+    &:hover {
+      color: $flushblue;
+    }
+  }
+  i.fa-sort-down {
+    position: absolute;
+    right: 33px;
+    &:hover {
+      color: $flushblue;
+    }
+  }
+}

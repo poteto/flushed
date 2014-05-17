@@ -42,6 +42,6 @@ LeafletMapComponent = Ember.Component.extend
 
   willClearRender: ->
     @_super()
-    this.get('map').remove()
+    @get('map').remove()
 
 `export default LeafletMapComponent`
