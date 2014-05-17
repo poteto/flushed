@@ -24,15 +24,26 @@ p, small, h1, h2, h3, h4, h5, h6 {
   @extend %brand-font;
 }
 
+// Typography
+
+h3 {
+	color: $flushblue;
+}
+
+// Form Inputs, etc. 
+
 input, textarea, select { // using bad code to overwrite globally //
 	border-radius: 0 !important;
 	border: 2px solid $flushgrey !important; 
 	box-shadow: none !important;
 }
 
-h3 {
-	color: $flushblue;
+li {
+	list-style-type: none !important;
 }
+
+
+// Buttons 
 
 .btn {
 
