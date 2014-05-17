@@ -32,12 +32,12 @@ LeafletMapComponent = Ember.Component.extend
       maxZoom: 18
     }).addTo(map)
 
-    map.on 'click', (e) =>
+    map.on 'click', (e) ->
       lat = e.latlng.lat
       lng = e.latlng.lng
 
-      $('#new-toilet-x')?.val(lat)
-      $('#new-toilet-y')?.val(lng)
+      $('#new-toilet-x')?.val(lat).change()
+      $('#new-toilet-y')?.val(lng).change()
 
   willClearRender: ->
     @_super()
