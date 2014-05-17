@@ -10,15 +10,6 @@
   transition: all .15s ease-out;
   -webkit-transition: all .15s ease-out;
 
-  &.sidemenu-active {
-    transition: all .15s ease-out;
-    -webkit-transition: all .15s ease-out;
-    width: $fixedmenu-width;
-    header .brand {
-      letter-spacing: 2px;
-    }
-  }
-
   header {
     padding-bottom: $default-margin / 2;
     a {
@@ -29,7 +20,6 @@
     }
     .brand {
       font-size: 18px;
-      letter-spacing: 30px;
       font-weight: bold;
       padding-left: $default-margin;
       &:hover {
