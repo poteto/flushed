@@ -1,40 +1,20 @@
-<div class="row" style="height: 100%">
-  <div class="col-sm-5">
-
-    <form action="" class="form-inline">
-      <div class="form-group">
-        {{input class="form-control input-lg" valueBinding="search" id="search-query" placeholder="Search"}}
-        <button class="btn btn-primary">
-          <i class="fa fa-plus fa-lg"></i>
-        </button>
-      </div>
-    </form>
-
-    <ul>
-      {{#each toilet in model}}
-        <li>
-          {{#link-to 'toilet.show' toilet.id}}
-            {{toilet.title}}
-          {{/link-to}}
-          <p>
-            {{#if toilet.accessible}}
-              <i class="fa fa-wheelchair fa-lg"></i>
-            {{/if}}
-            {{#if toilet.male}}
-              <i class="fa fa-male fa-lg"></i>
-            {{/if}}
-            {{#if toilet.female}}
-              <i class="fa fa-female fa-lg"></i>
-            {{/if}}
-          </p>
-        </li>
-      {{/each}}
-    </ul>
-
-  </div>
-  <div class="col-sm-7" style="height: 100%">
-    <div id="map">
-      {{leaflet-map content=model}}
-    </div>
-  </div>
-</div>
+<ul>
+  {{#each toilet in model}}
+    <li>
+      {{#link-to 'toilet.show' toilet.id}}
+        {{toilet.title}}
+      {{/link-to}}
+      <p>
+        {{#if toilet.accessible}}
+          <i class="fa fa-wheelchair fa-lg"></i>
+        {{/if}}
+        {{#if toilet.male}}
+          <i class="fa fa-male fa-lg"></i>
+        {{/if}}
+        {{#if toilet.female}}
+          <i class="fa fa-female fa-lg"></i>
+        {{/if}}
+      </p>
+    </li>
+  {{/each}}
+</ul>
