@@ -1,4 +1,4 @@
-<h3>New toilet</h3>
+<h3>Add a new toilet</h3>
 
 <form role="form">
   <div class="row">
@@ -25,5 +25,64 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-xs-3">
+      <div class="checkbox">
+        <label>
+          {{input type="checkbox" checkedBinding="newToiletMale"}}
+          Male?
+        </label>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="checkbox">
+        <label>
+          {{input type="checkbox" checkedBinding="newToiletFemale"}}
+          Female?
+        </label>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="checkbox">
+        <label>
+          {{input type="checkbox" checkedBinding="newToiletBabychange"}}
+          Babychange?
+        </label>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="checkbox">
+        <label>
+          {{input type="checkbox" checkedBinding="newToiletSharps"}}
+          Sharps?
+        </label>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="checkbox">
+        <label>
+          {{input type="checkbox" checkedBinding="newToiletShowers"}}
+          Showers?
+        </label>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="checkbox">
+        <label>
+          {{input type="checkbox" checkedBinding="newToiletSanitary"}}
+          Sanitary disposal?
+        </label>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="btn btn-primary" {{action 'saveToilet'}}>Save</button>
 
 </form>
