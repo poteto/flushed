@@ -43,7 +43,7 @@ Toilet.reopenClass({
     female: true,
     unisex: true,
     babyChange: true,
-    sharps: false,
+    sharps: true,
     showers: false,
     sanitaryDisposal: false,
     drinkingWater: false,
