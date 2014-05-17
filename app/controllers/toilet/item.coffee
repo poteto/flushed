@@ -14,4 +14,5 @@ ToiletItemController = Ember.ObjectController.extend
       model.save()
       .then ->
         toastr.warning "Downvoted!"
+
 `export default ToiletItemController`
