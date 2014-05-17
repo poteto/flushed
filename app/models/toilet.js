@@ -9,7 +9,7 @@ var Toilet = DS.Model.extend({
   female: attr('boolean'),
   unisex: attr('boolean'),
   babyChange: attr('boolean'),
-  ratings: hasMany('rating'),
+  rating: attr('number'),
   sharps: attr('boolean'),
   showers: attr('boolean'),
   sanitaryDisposal: attr('boolean'),
@@ -21,7 +21,7 @@ Toilet.reopenClass({
   FIXTURES: [
   {
     id: "1",
-    title: 'Public Toilet - Southbank Promenade (opposite Esso House)',
+    title: 'Southbank Promenade (opposite Esso House)',
     accessible: true,
     male: true,
     female: true,
@@ -31,25 +31,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8203421290366,
-    geoY: 144.964219727982
-  },
-  {
-    id: "2",
-    title: 'Melbourne Central Station',
-    accessible: true,
-    male: true,
-    female: true,
-    unisex: true,
-    babyChange: true,
-    sharps: true,
-    showers: false,
-    sanitaryDisposal: false,
-    geoX: -37.8100,
-    geoY: 144.9628
+    geoY: 144.964219727982,
+    rating: 84
   },
   {
     id: "3",
-    title: 'Public Toilet - Flinders Street Station',
+    title: 'Flinders Street Station',
     accessible: true,
     male: true,
     female: true,
@@ -59,11 +46,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: true,
     geoX: -37.817792,
-    geoY: 144.96722917
+    geoY: 144.96722917,
+    rating: 64
   },
   {
     id: "4",
-    title: 'Public Toilet - Lonsdale Street (Opposite 88 Lonsdale Street)',
+    title: 'Lonsdale Street (Opposite 88 Lonsdale Street)',
     accessible: true,
     male: true,
     female: true,
@@ -73,11 +61,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8100356799286,
-    geoY: 144.969902463305
+    geoY: 144.969902463305,
+    rating: 56
   },
   {
     id: "5",
-    title: 'Public Toilet - Flagstaff Gardens (cnr William & Dudley)',
+    title: 'Flagstaff Gardens (cnr William & Dudley)',
     accessible: true,
     male: true,
     female: true,
@@ -87,11 +76,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8089204751149,
-    geoY: 144.955043308784
+    geoY: 144.955043308784,
+    rating: 78
   },
   {
     id: "6",
-    title: 'Public Toilet - Saint Mangos Lane, The Palladio (New Quay)',
+    title: 'Saint Mangos Lane, The Palladio (New Quay)',
     accessible: true,
     male: true,
     female: true,
@@ -101,7 +91,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.814358311416,
-    geoY: 144.941682166969
+    geoY: 144.941682166969,
+    rating: 82
   },
   {
     id: "7",
@@ -115,11 +106,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: true,
     geoX: -37.817792,
-    geoY: 144.96722917
+    geoY: 144.96722917,
+    rating: 77
   },
   {
     id: "8",
-    title: 'Public Toilet - Alexandra Gardens (Riverslide Skate Park)',
+    title: 'Alexandra Gardens (Riverslide Skate Park)',
     accessible: true,
     male: true,
     female: true,
@@ -129,11 +121,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8203552732817,
-    geoY: 144.973312908294
+    geoY: 144.973312908294,
+    rating: 92
   },
   {
     id: "9",
-    title: 'Public Toilet - Birrarung Marr Speakers Corner',
+    title: 'Birrarung Marr Speakers Corner',
     accessible: true,
     male: true,
     female: true,
@@ -143,11 +136,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8210047801156,
-    geoY: 144.975933223872
+    geoY: 144.975933223872,
+    rating: 62
   },
   {
     id: "10",
-    title: 'Public Toilet - Exhibition Street (Opposite 242 Exhibition Street)',
+    title: 'Exhibition Street (Opposite 242 Exhibition Street)',
     accessible: false,
     male: true,
     female: true,
@@ -157,11 +151,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8095460463599,
-    geoY: 144.969407118569
+    geoY: 144.969407118569,
+    rating: 74
   },
   {
     id: "11",
-    title: 'Public Toilet - Queen Victoria Market (465 Queen Street)',
+    title: 'Queen Victoria Market (465 Queen Street)',
     accessible: true,
     male: true,
     female: true,
@@ -171,11 +166,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: 37.8078639954478,
-    geoY: 144.966424039606
+    geoY: 144.966424039606,
+    rating: 75
   },
   {
     id: "12",
-    title: 'Public Toilet - Corner of King & Lonsdale Streets',
+    title: 'Corner of King & Lonsdale Streets',
     accessible: true,
     male: true,
     female: true,
@@ -185,11 +181,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8144895,
-    geoY: 144.9548398
+    geoY: 144.9548398,
+    rating: 78
   },
   {
     id: "13",
-    title: 'Public Toilet - Melbourne Central Station',
+    title: 'Melbourne Central Station',
     accessible: true,
     male: true,
     female: true,
@@ -199,11 +196,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: true,
     geoX: -37.81005,
-    geoY: 144.9628
+    geoY: 144.9628,
+    rating: 72
   },
   {
     id: "14",
-    title: 'Public Toilet - Gordon Reserve (74-108 Spring Street)',
+    title: 'Gordon Reserve (74-108 Spring Street)',
     accessible: true,
     male: false,
     female: true,
@@ -213,11 +211,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8122407760326,
-    geoY: 144.97392555857
+    geoY: 144.97392555857,
+    rating: 84
   },
   {
     id: "15",
-    title: 'Public Toilet - Treasury Gardens (Store and Toilet)',
+    title: 'Treasury Gardens (Store and Toilet)',
     accessible: true,
     male: true,
     female: true,
@@ -227,11 +226,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8134184349012,
-    geoY: 144.977467007735
+    geoY: 144.977467007735,
+    rating: 60
   },
   {
     id: "16",
-    title: 'Public Toilet - Carlton Gardens South (Opposite 39 Rathdowne Street)',
+    title: 'Carlton Gardens South (Opposite 39 Rathdowne Street)',
     accessible: true,
     male: true,
     female: true,
@@ -241,11 +241,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8062589327935,
-    geoY: 144.969202702206
+    geoY: 144.969202702206,
+    rating: 90
   },
   {
     id: "17",
-    title: 'Public Toilet - Franklin Street (Opposite 80 Franklin Street)',
+    title: 'Franklin Street (Opposite 80 Franklin Street)',
     accessible: true,
     male: true,
     female: true,
@@ -255,11 +256,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8082354509674,
-    geoY: 144.96018982974
+    geoY: 144.96018982974,
+    rating: 79
   },
   {
     id: "18",
-    title: 'Public Toilet - Queensberry Street (Adjacent 179 Queensberry Street)',
+    title: 'Queensberry Street (Adjacent 179 Queensberry Street)',
     accessible: false,
     male: true,
     female: false,
@@ -269,11 +271,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8046418038556,
-    geoY: 144.962850161271
+    geoY: 144.962850161271,
+    rating: 71
   },
   {
     id: "19",
-    title: 'Public Toilet - Parliament Station  - City Loop ',
+    title: 'Parliament Station  - City Loop ',
     accessible:  true,
     male: true,
     female: false,
@@ -283,11 +286,12 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: 37.8114,
-    geoY: 144.9731
+    geoY: 144.9731,
+    rating: 64
   },
   {
     id: "20",
-    title: 'Public Toilet - Powlett  Street Reserve - East Melbourne ',
+    title: 'Powlett  Street Reserve - East Melbourne ',
     accessible:  true,
     male: true,
     female: false,
@@ -298,11 +302,12 @@ Toilet.reopenClass({
     sanitaryDisposal: false,
     drinkingWater: false,
     geoX: -37.4847,
-    geoY: 144.5906
+    geoY: 144.5906,
+    rating: 56
   },
   {
     id: "21",
-    title: 'Public Toilet - Gosch\'s Paddock, Yarra Park ',
+    title: 'Gosch\'s Paddock, Yarra Park ',
     accessible:  true,
     male: true,
     female: true,
@@ -313,7 +318,8 @@ Toilet.reopenClass({
     sanitaryDisposal: false,
     drinkingWater: false,
     geoX: -37.4905,
-    geoY: 144.5907
+    geoY: 144.5907,
+    rating: 88
   }
 ]});
 
