@@ -1,11 +1,17 @@
 #toilet-listings {
 	height: 100%;
 	overflow-y: scroll;
-  padding-bottom: $default-margin;
+	padding-bottom: $default-margin;
 
-  & > ul {
-    padding-left: $default-margin/2;
-  }
+	& > ul {
+		padding-left: $default-margin/2;
+	}
+
+	.toilet-title {
+		font-size: 1.2em;
+		font-weight: 500;
+	}
+
 }
 
 li.toilet-li {
