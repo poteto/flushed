@@ -1,12 +1,31 @@
-<ul>
-  {{#each toilet in model}}
-    <li>
-      {{toilet.title}}
-      <p>
-        {{#if toilet.accessible}}
-          <i class="fa fa-wheelchair"></i>
-        {{/if}}
-      </p>
-    </li>
-  {{/each}}
-</ul>
+<div class="row" style="height: 100%">
+  <div class="col-sm-6">
+
+    <ul>
+      {{#each toilet in model}}
+        <li>
+          {{#link-to 'toilet.show' toilet.id}}
+            {{toilet.title}}
+          {{/link-to}}
+          <p>
+            {{#if toilet.accessible}}
+              <i class="fa fa-wheelchair fa-lg"></i>
+            {{/if}}
+            {{#if toilet.male}}
+              <i class="fa fa-male fa-lg"></i>
+            {{/if}}
+            {{#if toilet.female}}
+              <i class="fa fa-female fa-lg"></i>
+            {{/if}}
+          </p>
+        </li>
+      {{/each}}
+    </ul>
+
+  </div>
+  <div class="col-sm-6" style="height: 100%">
+    <div id="map">
+      {{leaflet-map content=model}}
+    </div>
+  </div>
+</div>
