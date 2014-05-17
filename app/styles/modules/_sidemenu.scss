@@ -1,6 +1,6 @@
 // @group Sidemenu //
 
-  #sidemenu{
+  #sidemenu {
     background: $flushgrey;
     position: fixed;
     top: 0;
@@ -15,13 +15,14 @@
       transition: all .15s ease-out;
       -webkit-transition: all .15s ease-out;
       width: $fixedmenu-width;
-      header .brand {
-        letter-spacing: 2px;
-      }
 
-      header .logo {
-        width: 172px;
-      }
+    header .brand {
+      letter-spacing: 2px;
+    }
+
+    header .logo {
+      width: 172px;
+    }
 
     }
 // @end #sidemenu
@@ -35,7 +36,7 @@
       height: 50px;
       display: block;
       position: relative;
-      margin: 10px 0 0 20px;
+      margin: 10px 0 0 16px;
     }
 
     a {
@@ -57,18 +58,5 @@
       overflow: hidden;
     }
   }
-
-  // Search Bar
-
-    .search-bar {
-      width: 300px;
-      height: 20px;
-      display: inline-block;
-      position: relative;
-    }
-
-  // Listings 
-    
-    
 
 }
