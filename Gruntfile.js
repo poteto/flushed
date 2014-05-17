@@ -182,6 +182,7 @@ module.exports = function(grunt) {
   // Parallelize most of the build process
   _.merge(config, {
     concurrent: {
+      limit: 20,
       buildDist: [
         "buildTemplates:dist",
         "buildScripts",
@@ -253,4 +254,7 @@ module.exports = function(grunt) {
   });
 
   grunt.initConfig(config);
+
+  // grunt notify
+  grunt.loadNpmTasks('grunt-notify');
 };
