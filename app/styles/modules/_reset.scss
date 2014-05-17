@@ -35,6 +35,12 @@ h3 {
 	color: $flushblue;
 }
 
+.checkbox {
+	label {
+		font-size: 1.2em; // add media query to make text smaller #todo
+	}
+}
+
 // Form Inputs, etc. 
 
 input, textarea, select { // using bad code to overwrite globally //

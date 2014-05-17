@@ -1,7 +1,7 @@
 <ul class="animated fadeIn margin-8">
   {{#each toilet in model}}
     <li class="margin-4">
-      {{#link-to 'toilet.show' toilet.id}}
+      {{#link-to 'toilet.show' toilet.id class="toilet-title"}}
         {{toilet.title}}
       {{/link-to}}
       <p class="margin-2">
