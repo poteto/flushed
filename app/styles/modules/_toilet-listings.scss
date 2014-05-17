@@ -7,3 +7,26 @@
     padding-left: $default-margin/2;
   }
 }
+
+li.toilet-li {
+  border-bottom: 2px solid $flushgrey;
+  padding: $default-margin/2;
+  &:hover {
+    background: $flushgrey;
+    i {
+      color: $black;
+    }
+  }
+  i {
+    color: $c-gray-medium;
+  }
+}
+
+.toilet-title {
+  font-size: 18px;
+}
+
+.toilet-rating {
+  font-weight: 300;
+  font-size: 24px;
+}

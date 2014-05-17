@@ -9,7 +9,7 @@ var Toilet = DS.Model.extend({
   female: attr('boolean'),
   unisex: attr('boolean'),
   babyChange: attr('boolean'),
-  ratings: hasMany('rating'),
+  rating: attr('number'),
   sharps: attr('boolean'),
   showers: attr('boolean'),
   sanitaryDisposal: attr('boolean'),
@@ -31,7 +31,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8203421290366,
-    geoY: 144.964219727982
+    geoY: 144.964219727982,
+    rating: 84
   },
   {
     id: "3",
@@ -45,7 +46,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: true,
     geoX: -37.817792,
-    geoY: 144.96722917
+    geoY: 144.96722917,
+    rating: 64
   },
   {
     id: "4",
@@ -59,7 +61,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8100356799286,
-    geoY: 144.969902463305
+    geoY: 144.969902463305,
+    rating: 56
   },
   {
     id: "5",
@@ -73,7 +76,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8089204751149,
-    geoY: 144.955043308784
+    geoY: 144.955043308784,
+    rating: 78
   },
   {
     id: "6",

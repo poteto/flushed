@@ -1,9 +1,12 @@
 <ul class="animated fadeIn margin-8">
   {{#each toilet in model}}
-    <li class="margin-4">
+    <li class="toilet-li">
       {{#link-to 'toilet.show' toilet.id class="toilet-title"}}
         {{toilet.title}}
       {{/link-to}}
+      {{#if toilet.rating}}
+        <h5 class="pull-right toilet-rating">{{toilet.rating}}%</h5>
+      {{/if}}
       <p class="margin-2">
         {{#if toilet.accessible}}
           <i class="fa fa-wheelchair fa-lg"></i>
