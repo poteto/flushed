@@ -1,20 +1,28 @@
-<ul class="animated fadeIn">
+<ul class="animated fadeIn margin-8">
   {{#each toilet in model}}
-    <li>
-      {{#link-to 'toilet.show' toilet.id}}
+    <li class="margin-4">
+      {{#link-to 'toilet.show' toilet.id class="toilet-title"}}
         {{toilet.title}}
       {{/link-to}}
-      <p>
+      <p class="margin-2">
         {{#if toilet.accessible}}
           <i class="fa fa-wheelchair fa-lg"></i>
         {{/if}}
+
         {{#if toilet.male}}
           <i class="fa fa-male fa-lg"></i>
         {{/if}}
+
         {{#if toilet.female}}
           <i class="fa fa-female fa-lg"></i>
+        {{/if}}
+
+        {{#if toilet.babyChange}}
+          <i class="fa"></i>
         {{/if}}
       </p>
     </li>
   {{/each}}
 </ul>
+
+
