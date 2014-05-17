@@ -10,23 +10,30 @@ var Toilet = DS.Model.extend({
   unisex: attr('boolean'),
   babyChange: attr('boolean'),
   ratings: hasMany('rating'),
-
+  sharps: attr('boolean'),
+  showers: attr('boolean'),
+  sanitaryDisposal: attr('boolean'),
+  drinkingWater: attr('boolean'),
+  geoX: attr('number'),
+  geoY: attr('number')
 });
 
 Toilet.reopenClass({
   FIXTURES: [
   {
     id: "1",
-    title: 'install EAK',
-    accessible: true
-  }, {
-    id: "2",
-    title: 'install additional dependencies',
-    accessible: true
-  }, {
-    id: "3",
-    title: 'develop amazing things',
-    accessible: false
+    title: 'Public Toilet - Southbank Promenade (opposite Esso House)',
+    accessible: true,
+    male: true,
+    female: true,
+    unisex: true,
+    babyChange: true,
+    sharps: false,
+    showers: false,
+    sanitaryDisposal: false,
+    drinkingWater: false,
+    geoX: -37.8203421290366,
+    geoY: 144.964219727982
   }
 ]});
 

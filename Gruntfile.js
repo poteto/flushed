@@ -255,6 +255,4 @@ module.exports = function(grunt) {
 
   grunt.initConfig(config);
 
-  // grunt notify
-  grunt.loadNpmTasks('grunt-notify');
 };

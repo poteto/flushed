@@ -1,5 +1,12 @@
 <ul>
   {{#each toilet in model}}
-    <li>{{toilet.title}}</li>
+    <li>
+      {{toilet.title}}
+      <p>
+        {{#if toilet.accessible}}
+          <i class="fa fa-wheelchair"></i>
+        {{/if}}
+      </p>
+    </li>
   {{/each}}
 </ul>

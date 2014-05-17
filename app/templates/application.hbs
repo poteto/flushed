@@ -1,4 +1,13 @@
 {{render 'sidemenu'}}
 <div class="outer-wrap">
-  {{outlet}}
+  <div class="row" style="height: 100%">
+    <div class="col-sm-6">
+      {{outlet}}
+    </div>
+    <div class="col-sm-6" style="height: 100%">
+      <div id="map">
+        {{leaflet-map}}
+      </div>
+    </div>
+  </div>
 </div>
