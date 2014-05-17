@@ -1,26 +1,30 @@
-#sidemenu{
-  background: $flushgrey;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 55px;
-  z-index: 998;
-  height: 100%;
-  transition: all .15s ease-out;
-  -webkit-transition: all .15s ease-out;
+// @group Sidemenu //
 
-  &.sidemenu-active {
+  #sidemenu{
+    background: $flushgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 55px;
+    z-index: 998;
+    height: 100%;
     transition: all .15s ease-out;
     -webkit-transition: all .15s ease-out;
-    width: $fixedmenu-width;
-    header .brand {
-      letter-spacing: 2px;
-    }
 
-    header .logo {
-      width: 172px;
+    &.sidemenu-active {
+      transition: all .15s ease-out;
+      -webkit-transition: all .15s ease-out;
+      width: $fixedmenu-width;
+      header .brand {
+        letter-spacing: 2px;
+      }
+
+      header .logo {
+        width: 172px;
+      }
+
     }
-  }
+// @end #sidemenu
 
   header {
     padding-bottom: $default-margin / 2;
@@ -53,4 +57,18 @@
       overflow: hidden;
     }
   }
+
+  // Search Bar
+
+    .search-bar {
+      width: 300px;
+      height: 20px;
+      display: inline-block;
+      position: relative;
+    }
+
+  // Listings 
+    
+    
+
 }
