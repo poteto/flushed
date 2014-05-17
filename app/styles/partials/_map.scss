@@ -1,3 +1,15 @@
 #map {
   height: 100%;
+
+  	#map-filters {
+	  .filter-test {
+	  	display: inline-block;
+		position: relative;
+		background: #222;
+		width: 30px;
+		height: 30px;
+		z-index: 1000;
+	  }
+	}
+	
 }
