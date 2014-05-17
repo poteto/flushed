@@ -1,0 +1,24 @@
+<div class="row animated fadeIn" style="height: 100%">
+  <div class="col-sm-5" id="toilet-listings">
+
+    <form action="" class="form-inline">
+      <div class="form-group margin-2">
+        {{input class="form-control input-lg" valueBinding="search" id="search-query" placeholder="Search"}}
+        {{#link-to 'toilet.new'}}
+          <button class="btn btn-primary">
+            <i class="fa fa-plus fa-lg"></i>
+            Add a new toilet
+          </button>
+        {{/link-to}}
+      </div>
+    </form>
+
+  {{outlet}}
+
+  </div>
+  <div class="col-sm-7" style="height: 100%">
+    <div id="map">
+      {{leaflet-map content=model}}
+    </div>
+  </div>
+</div>

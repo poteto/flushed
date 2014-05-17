@@ -1,0 +1,103 @@
+// Global
+html, body {
+  height: 100%;
+}
+
+body {
+  @extend %brand-font;
+  background: $white;
+}
+
+// fix for fixedmenu
+.row {
+  margin: {
+    left: 0;
+    right: 0;
+  };
+}
+
+input, button, select, textarea {
+  @extend %brand-font;
+}
+
+p, small, h1, h2, h3, h4, h5, h6 {
+  @extend %brand-font;
+}
+
+// Typography
+
+
+h2 {
+	color: $flushtextgrey;
+}
+
+h3 {
+	color: $flushblue;
+}
+
+.checkbox {
+	label {
+		font-size: 1.2em; // add media query to make text smaller #todo
+	}
+}
+
+// Form Inputs, etc. 
+
+input, textarea, select { // using bad code to overwrite globally //
+	border-radius: 0 !important;
+	border: 2px solid $flushgrey !important; 
+	box-shadow: none !important;
+}
+
+li {
+	list-style-type: none !important; // removes bullets globally
+}
+
+
+// Buttons 
+
+.btn {
+
+	padding: 12px 12px !important;
+	border-radius: 0 !important;
+	border: none !important;
+
+	.btn-primary {
+		border-radius: 0 !important;
+		border: 0px !important;
+	}
+
+	.btn-150 {
+		width: 150px !important;
+	}
+
+}
+
+
+// Pushing Margins 
+
+.margin-2 {
+	margin-top: 2%;
+}
+
+.margin-4 {
+	margin-top: 4%;
+}
+
+.margin-8 {
+	margin-top: 8%;
+}
+
+// Center 
+
+.center-align {
+	text-align: center;
+}
+
+.center-btn {
+
+}
+
+
+
+

@@ -1,5 +1,19 @@
-<ul>
-{{#each}}
-  <li>{{this}}</li>
-{{/each}}
-</ul>
+
+<div class="container" id="landing-page">
+	
+	<div class="row col-xs-3"></div>
+
+	<div class="row col-xs-6 margin-4">
+	
+		<div class="logo-large"></div>
+
+		<h2 class="center-align">Finding the lushest restrooms near you</h2>
+
+		{{#link-to 'toilet.index'}}
+			<button class="btn btn-primary btn-lg margin-4">
+		        Get Flushed
+		    </button>
+		{{/link-to}}
+	</div>
+
+</div>

@@ -1,0 +1,61 @@
+// @group Sidemenu //
+
+  #sidemenu {
+    background: $flushgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 55px;
+    z-index: 998;
+    height: 100%;
+    transition: all .15s ease-out;
+    -webkit-transition: all .15s ease-out;
+
+    &.sidemenu-active {
+      transition: all .15s ease-out;
+      -webkit-transition: all .15s ease-out;
+      width: $fixedmenu-width;
+
+    header .brand {
+      letter-spacing: 2px;
+    }
+
+    header .logo {
+      width: 172px;
+    }
+
+    }
+// @end #sidemenu
+
+  header {
+    padding-bottom: $default-margin / 2;
+    
+    .logo {
+      background: url('/assets/images/flushed-logo.png');
+      width: 40px;
+      height: 50px;
+      display: block;
+      position: relative;
+      margin: 10px 0 0 16px;
+    }
+
+    a {
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .brand {
+      font-size: 18px;
+      font-weight: bold;
+      padding-left: $default-margin;
+      &:hover {
+        color: $c-blue;
+      }
+      color: $white;
+      overflow: hidden;
+    }
+  }
+
+}

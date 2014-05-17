@@ -1,0 +1,9 @@
+#toilet-listings {
+	height: 100%;
+	overflow-y: scroll;
+  padding-bottom: $default-margin;
+
+  & > ul {
+    padding-left: $default-margin/2;
+  }
+}

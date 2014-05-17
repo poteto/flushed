@@ -7,6 +7,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script type="text/javascript" src="//use.typekit.net/ugu4poj.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" />
+
   <!-- build:css(tmp/result) /assets/app.min.css -->
   <link rel="stylesheet" href="/assets/app.css">
   <!-- endbuild -->
@@ -48,6 +54,9 @@
     <script src="/vendor/ember-shim.js"></script>
     <script src="/vendor/ic-ajax/dist/named-amd/main.js"></script>
     <script src="/vendor/ember-load-initializers/ember-load-initializers.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 
   <!-- endbuild -->
 
@@ -58,13 +67,6 @@
 
   <!-- endbuild -->
 
-  <!-- @if dist=false -->
-  <style>
-    @keyframes domChanged { from { background: yellow; } }
-    @-webkit-keyframes domChanged { from { background: yellow; } }
-    .ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
-  </style>
-  <!-- @endif -->
   <!-- @if tests=true -->
   <script src="/vendor/ember-shim.js"></script>
   <link rel="stylesheet" href="/vendor/qunit/qunit/qunit.css">
