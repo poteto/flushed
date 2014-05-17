@@ -5,11 +5,9 @@
         {{toilet.title}}
       {{/link-to}}
       <div class="rating-container pull-right">
-        {{#if toilet.rating}}
-          <i class="fa fa-sort-up fa-lg" {{action 'upvote'}}></i>
-          <h5 class="toilet-rating">{{toilet.rating}}</h5>
-          <i class="fa fa-sort-down fa-lg" {{action 'downvote'}}></i>
-        {{/if}}
+        <i class="fa fa-sort-up fa-lg" {{action 'upvote'}}></i>
+        <h5 class="toilet-rating">{{toilet.rating}}</h5>
+        <i class="fa fa-sort-down fa-lg" {{action 'downvote'}}></i>
       </div>
       <p class="margin-2">
         {{#if toilet.accessible}}

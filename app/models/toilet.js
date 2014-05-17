@@ -9,7 +9,7 @@ var Toilet = DS.Model.extend({
   female: attr('boolean'),
   unisex: attr('boolean'),
   babyChange: attr('boolean'),
-  rating: attr('number'),
+  rating: attr('number', {defaultValue: 0}),
   sharps: attr('boolean'),
   showers: attr('boolean'),
   sanitaryDisposal: attr('boolean'),
