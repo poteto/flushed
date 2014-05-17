@@ -91,7 +91,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.814358311416,
-    geoY: 144.941682166969
+    geoY: 144.941682166969,
+    rating: 82
   },
   {
     id: "7",
@@ -105,7 +106,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: true,
     geoX: -37.817792,
-    geoY: 144.96722917
+    geoY: 144.96722917,
+    rating: 77
   },
   {
     id: "8",
@@ -119,7 +121,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8203552732817,
-    geoY: 144.973312908294
+    geoY: 144.973312908294,
+    rating: 92
   },
   {
     id: "9",
@@ -133,7 +136,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8210047801156,
-    geoY: 144.975933223872
+    geoY: 144.975933223872,
+    rating: 62
   },
   {
     id: "10",
@@ -147,7 +151,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8095460463599,
-    geoY: 144.969407118569
+    geoY: 144.969407118569,
+    rating: 74
   },
   {
     id: "11",
@@ -161,7 +166,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: 37.8078639954478,
-    geoY: 144.966424039606
+    geoY: 144.966424039606,
+    rating: 75
   },
   {
     id: "12",
@@ -175,7 +181,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8144895,
-    geoY: 144.9548398
+    geoY: 144.9548398,
+    rating: 78
   },
   {
     id: "13",
@@ -189,7 +196,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: true,
     geoX: -37.81005,
-    geoY: 144.9628
+    geoY: 144.9628,
+    rating: 72
   },
   {
     id: "14",
@@ -203,7 +211,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8122407760326,
-    geoY: 144.97392555857
+    geoY: 144.97392555857,
+    rating: 84
   },
   {
     id: "15",
@@ -217,7 +226,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8134184349012,
-    geoY: 144.977467007735
+    geoY: 144.977467007735,
+    rating: 60
   },
   {
     id: "16",
@@ -231,7 +241,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8062589327935,
-    geoY: 144.969202702206
+    geoY: 144.969202702206,
+    rating: 90
   },
   {
     id: "17",
@@ -245,7 +256,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8082354509674,
-    geoY: 144.96018982974
+    geoY: 144.96018982974,
+    rating: 79
   },
   {
     id: "18",
@@ -259,7 +271,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: -37.8046418038556,
-    geoY: 144.962850161271
+    geoY: 144.962850161271,
+    rating: 71
   },
   {
     id: "19",
@@ -273,7 +286,8 @@ Toilet.reopenClass({
     showers: false,
     sanitaryDisposal: false,
     geoX: 37.8114,
-    geoY: 144.9731
+    geoY: 144.9731,
+    rating: 64
   },
   {
     id: "20",
@@ -288,7 +302,8 @@ Toilet.reopenClass({
     sanitaryDisposal: false,
     drinkingWater: false,
     geoX: -37.4847,
-    geoY: 144.5906
+    geoY: 144.5906,
+    rating: 56
   },
   {
     id: "21",
@@ -303,7 +318,8 @@ Toilet.reopenClass({
     sanitaryDisposal: false,
     drinkingWater: false,
     geoX: -37.4905,
-    geoY: 144.5907
+    geoY: 144.5907,
+    rating: 88
   }
 ]});
 
