@@ -1,88 +1,92 @@
-<h3>Add a new toilet</h3>
+<div class="animated fadeIn">
+  <h3>Add a new toilet</h3>
+  <p>Click anywhere on the map to get the location.</p>
 
-<form role="form">
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="form-group">
-        <label for="new-toilet-title">Name</label>
-        {{input class="form-control input-lg" id="new-toilet-title" valueBinding="newToiletTitle"}}
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-6">
-      <div class="form-group">
-        <label for="new-toilet-x">Latitude</label>
-        {{input class="form-control input-lg" id="new-toilet-x" valueBinding="newToiletGeoX"}}
+  <form role="form">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="new-toilet-title">Name</label>
+          {{input class="form-control input-lg" id="new-toilet-title" valueBinding="newToiletTitle"}}
+        </div>
       </div>
     </div>
 
-    <div class="col-xs-6">
-      <div class="form-group">
-        <label for="new-toilet-y">Latitude</label>
-        {{input class="form-control input-lg" id="new-toilet-y" valueBinding="newToiletGeoY"}}
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="new-toilet-x">Latitude</label>
+          {{input class="form-control input-lg" id="new-toilet-x" valueBinding="newToiletGeoX"}}
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-3">
-      <div class="checkbox">
-        <label>
-          {{input type="checkbox" checkedBinding="newToiletMale"}}
-          Male?
-        </label>
-      </div>
-    </div>
-
-    <div class="col-xs-3">
-      <div class="checkbox">
-        <label>
-          {{input type="checkbox" checkedBinding="newToiletFemale"}}
-          Female?
-        </label>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="new-toilet-y">Latitude</label>
+          {{input class="form-control input-lg" id="new-toilet-y" valueBinding="newToiletGeoY"}}
+        </div>
       </div>
     </div>
 
-    <div class="col-xs-3">
-      <div class="checkbox">
-        <label>
-          {{input type="checkbox" checkedBinding="newToiletBabychange"}}
-          Babychange?
-        </label>
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="checkbox">
+          <label>
+            {{input type="checkbox" checkedBinding="newToiletMale"}}
+            Male?
+          </label>
+        </div>
       </div>
+
+      <div class="col-xs-3">
+        <div class="checkbox">
+          <label>
+            {{input type="checkbox" checkedBinding="newToiletFemale"}}
+            Female?
+          </label>
+        </div>
+      </div>
+
+      <div class="col-xs-3">
+        <div class="checkbox">
+          <label>
+            {{input type="checkbox" checkedBinding="newToiletBabychange"}}
+            Babychange?
+          </label>
+        </div>
+      </div>
+
+      <div class="col-xs-3">
+        <div class="checkbox">
+          <label>
+            {{input type="checkbox" checkedBinding="newToiletSharps"}}
+            Sharps?
+          </label>
+        </div>
+      </div>
+
+      <div class="col-xs-3">
+        <div class="checkbox">
+          <label>
+            {{input type="checkbox" checkedBinding="newToiletShowers"}}
+            Showers?
+          </label>
+        </div>
+      </div>
+
+      <div class="col-xs-3">
+        <div class="checkbox">
+          <label>
+            {{input type="checkbox" checkedBinding="newToiletSanitary"}}
+            Sanitary disposal?
+          </label>
+        </div>
+      </div>
+
     </div>
 
-    <div class="col-xs-3">
-      <div class="checkbox">
-        <label>
-          {{input type="checkbox" checkedBinding="newToiletSharps"}}
-          Sharps?
-        </label>
-      </div>
-    </div>
+    <button class="btn btn-primary" {{action 'saveToilet'}}>Save</button>
 
-    <div class="col-xs-3">
-      <div class="checkbox">
-        <label>
-          {{input type="checkbox" checkedBinding="newToiletShowers"}}
-          Showers?
-        </label>
-      </div>
-    </div>
+  </form>
 
-    <div class="col-xs-3">
-      <div class="checkbox">
-        <label>
-          {{input type="checkbox" checkedBinding="newToiletSanitary"}}
-          Sanitary disposal?
-        </label>
-      </div>
-    </div>
-
-  </div>
-
-  <button class="btn btn-primary" {{action 'saveToilet'}}>Save</button>
-
-</form>
+</div>

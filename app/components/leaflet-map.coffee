@@ -38,6 +38,7 @@ LeafletMapComponent = Ember.Component.extend
 
       $('#new-toilet-x')?.val(lat).change()
       $('#new-toilet-y')?.val(lng).change()
+      $('#new-toilet-title')?.focus()
 
   willClearRender: ->
     @_super()
