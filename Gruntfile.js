@@ -89,9 +89,6 @@ module.exports = function(grunt) {
   // App Kit's Main Tasks
   // ====================
 
-  grunt.loadNpmTasks('grunt-contrib-coffee');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-
   // Generate the production version
   // ------------------
   grunt.registerTask('dist', "Build a minified & production-ready version of your app.", [
