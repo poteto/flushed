@@ -1,35 +1,17 @@
-// @group Sidemenu //
-
-  #sidemenu {
-    background: $flushgrey;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 55px;
-    z-index: 998;
-    height: 100%;
-    transition: all .15s ease-out;
-    -webkit-transition: all .15s ease-out;
-
-    &.sidemenu-active {
-      transition: all .15s ease-out;
-      -webkit-transition: all .15s ease-out;
-      width: $fixedmenu-width;
-
-    header .brand {
-      letter-spacing: 2px;
-    }
-
-    header .logo {
-      width: 172px;
-    }
-
-    }
-// @end #sidemenu
+#sidemenu {
+  background: $c-gray-dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 55px;
+  z-index: 998;
+  height: 100%;
+  transition: all .15s ease-out;
+  -webkit-transition: all .15s ease-out;
 
   header {
     padding-bottom: $default-margin / 2;
-    
+
     .logo {
       background: url('/assets/images/flushed-logo.png');
       width: 40px;
@@ -57,5 +39,46 @@
       overflow: hidden;
     }
   }
+}
 
+ul.sidemenu-nav-list {
+  li {
+    & > a {
+      padding: {
+        top: $default-margin * 0.75;
+        bottom: $default-margin * 0.75;
+        left: $default-margin;
+      };
+      border-top: 1px solid lighten($c-gray-dark, 5%);
+      border-bottom: 1px solid darken($c-gray-dark, 5%);
+      background: $c-gray-dark;
+      display: block;
+      color: $c-gray-light;
+      overflow: hidden;
+      white-space: nowrap;
+      & > i.icon {
+        margin-right: $default-margin + 2px;
+      }
+      &.active, &:active {
+        background: $c-blue;
+        &:hover {
+          background: $c-blue;
+        }
+        & > i.icon {
+          color: $white;
+        }
+      }
+      &:hover {
+        text-decoration: none;
+        background: lighten($c-gray-dark, 10%);
+        color: $white;
+        & > i.icon {
+          color: $c-gray-light;
+        }
+      }
+      & > i.icon {
+        color: $c-gray-dark;
+      }
+    }
+  }
 }
