@@ -34,10 +34,19 @@ h3 {
 	color: $flushblue;
 }
 
+.btn {
 
-.btn-primary {
+	padding: 12px 12px !important;
 	border-radius: 0 !important;
-	border: 0px !important;
+	border: none !important;
+
+	.btn-primary {
+		border-radius: 0 !important;
+		border: 0px !important;
+	}
+
 }
+
+
 
 
