@@ -1,1 +1,27 @@
 <h2>{{model.title}}</h2>
+<small>{{model.geoX}}, {{model.geoY}}</small>
+
+<hr>
+
+<ul class="list-unstyled">
+  <h4>Facilities</h4>
+  <li>
+    {{#if model.male}}
+      <i class="fa fa-male fa-lg"></i>
+      Yes
+    {{/if}}
+  </li>
+  <li>
+    {{#if model.female}}
+      <i class="fa fa-female fa-lg"></i>
+      Yes
+    {{/if}}
+  </li>
+  <li>
+    {{#if model.babyChange}}
+      <i class="fa fa-child fa-lg"></i>
+      Yes
+    {{/if}}
+  </li>
+</ul>
+
