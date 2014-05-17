@@ -58,7 +58,6 @@ Toilet.reopenClass({
     sharps: true,
     showers: false,
     sanitaryDisposal: true,
-    drinkingWater: false,
     geoX: -37.817792,
     geoY: 144.96722917
   },
@@ -73,7 +72,6 @@ Toilet.reopenClass({
     sharps: false,
     showers: false,
     sanitaryDisposal: false,
-    drinkingWater: false,
     geoX: -37.8100356799286,
     geoY: 144.969902463305
   },
@@ -88,7 +86,6 @@ Toilet.reopenClass({
     sharps: false,
     showers: false,
     sanitaryDisposal: false,
-    drinkingWater: false,
     geoX: -37.8089204751149,
     geoY: 144.955043308784
   },
@@ -103,7 +100,6 @@ Toilet.reopenClass({
     sharps: false,
     showers: false,
     sanitaryDisposal: false,
-    drinkingWater: false,
     geoX: -37.814358311416,
     geoY: 144.941682166969
   }
