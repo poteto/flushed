@@ -1,0 +1,27 @@
+// Global
+html, body {
+  height: 100%;
+}
+
+body {
+  @extend %brand-font;
+  background: $white;
+}
+
+// fix for fixedmenu
+.row {
+  margin: {
+    left: 0;
+    right: 0;
+  };
+
+input, button, select, textarea {
+  @extend %brand-font;
+}
+
+p, small, h1, h2, h3, h4, h5, h6 {
+  @extend %brand-font;
+}
+
+
+}

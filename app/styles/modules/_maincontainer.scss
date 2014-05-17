@@ -1,0 +1,15 @@
+.application-wrapper {
+  height: 100%;
+}
+
+.outer-wrap {
+  min-height: 100%;
+  margin-left: 55px;
+}
+
+#inner-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding: $default-margin;
+  margin-top: -$default-margin * 1.5;
+}

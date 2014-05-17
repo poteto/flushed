@@ -1,0 +1,28 @@
+// antialiasing hack
+html, html a {
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility;
+}
+
+img,
+a,
+div {
+  -ms-interpolation-mode: bicubic;
+  image-rendering: optimizeQuality;
+}
+
+// vendor
+@import '../../vendor/bootstrap/dist/css/bootstrap.min.css';
+@import '../../vendor/font-awesome/scss/font-awesome.scss';
+@import '../../vendor/animate.css/animate.min.css';
+
+// modules
+@import 'modules/colors';
+@import 'modules/layout';
+@import 'modules/typography';
+@import 'modules/sidemenu';
+@import 'modules/reset';
+@import 'modules/maincontainer';
+
+// partials
