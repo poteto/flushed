@@ -21,7 +21,7 @@ Toilet.reopenClass({
   FIXTURES: [
   {
     id: "1",
-    title: 'Public Toilet - Southbank Promenade (opposite Esso House)',
+    title: 'Southbank Promenade (opposite Esso House)',
     accessible: true,
     male: true,
     female: true,
@@ -34,22 +34,8 @@ Toilet.reopenClass({
     geoY: 144.964219727982
   },
   {
-    id: "2",
-    title: 'Melbourne Central Station',
-    accessible: true,
-    male: true,
-    female: true,
-    unisex: true,
-    babyChange: true,
-    sharps: true,
-    showers: false,
-    sanitaryDisposal: false,
-    geoX: -37.8100,
-    geoY: 144.9628
-  },
-  {
     id: "3",
-    title: 'Public Toilet - Flinders Street Station',
+    title: 'Flinders Street Station',
     accessible: true,
     male: true,
     female: true,
@@ -63,7 +49,7 @@ Toilet.reopenClass({
   },
   {
     id: "4",
-    title: 'Public Toilet - Lonsdale Street (Opposite 88 Lonsdale Street)',
+    title: 'Lonsdale Street (Opposite 88 Lonsdale Street)',
     accessible: true,
     male: true,
     female: true,
@@ -77,7 +63,7 @@ Toilet.reopenClass({
   },
   {
     id: "5",
-    title: 'Public Toilet - Flagstaff Gardens (cnr William & Dudley)',
+    title: 'Flagstaff Gardens (cnr William & Dudley)',
     accessible: true,
     male: true,
     female: true,
@@ -91,7 +77,7 @@ Toilet.reopenClass({
   },
   {
     id: "6",
-    title: 'Public Toilet - Saint Mangos Lane, The Palladio (New Quay)',
+    title: 'Saint Mangos Lane, The Palladio (New Quay)',
     accessible: true,
     male: true,
     female: true,
@@ -119,7 +105,7 @@ Toilet.reopenClass({
   },
   {
     id: "8",
-    title: 'Public Toilet - Alexandra Gardens (Riverslide Skate Park)',
+    title: 'Alexandra Gardens (Riverslide Skate Park)',
     accessible: true,
     male: true,
     female: true,
@@ -133,7 +119,7 @@ Toilet.reopenClass({
   },
   {
     id: "9",
-    title: 'Public Toilet - Birrarung Marr Speakers Corner',
+    title: 'Birrarung Marr Speakers Corner',
     accessible: true,
     male: true,
     female: true,
@@ -147,7 +133,7 @@ Toilet.reopenClass({
   },
   {
     id: "10",
-    title: 'Public Toilet - Exhibition Street (Opposite 242 Exhibition Street)',
+    title: 'Exhibition Street (Opposite 242 Exhibition Street)',
     accessible: false,
     male: true,
     female: true,
@@ -161,7 +147,7 @@ Toilet.reopenClass({
   },
   {
     id: "11",
-    title: 'Public Toilet - Queen Victoria Market (465 Queen Street)',
+    title: 'Queen Victoria Market (465 Queen Street)',
     accessible: true,
     male: true,
     female: true,
@@ -175,7 +161,7 @@ Toilet.reopenClass({
   },
   {
     id: "12",
-    title: 'Public Toilet - Corner of King & Lonsdale Streets',
+    title: 'Corner of King & Lonsdale Streets',
     accessible: true,
     male: true,
     female: true,
@@ -189,7 +175,7 @@ Toilet.reopenClass({
   },
   {
     id: "13",
-    title: 'Public Toilet - Melbourne Central Station',
+    title: 'Melbourne Central Station',
     accessible: true,
     male: true,
     female: true,
@@ -203,7 +189,7 @@ Toilet.reopenClass({
   },
   {
     id: "14",
-    title: 'Public Toilet - Gordon Reserve (74-108 Spring Street)',
+    title: 'Gordon Reserve (74-108 Spring Street)',
     accessible: true,
     male: false,
     female: true,
@@ -217,7 +203,7 @@ Toilet.reopenClass({
   },
   {
     id: "15",
-    title: 'Public Toilet - Treasury Gardens (Store and Toilet)',
+    title: 'Treasury Gardens (Store and Toilet)',
     accessible: true,
     male: true,
     female: true,
@@ -231,7 +217,7 @@ Toilet.reopenClass({
   },
   {
     id: "16",
-    title: 'Public Toilet - Carlton Gardens South (Opposite 39 Rathdowne Street)',
+    title: 'Carlton Gardens South (Opposite 39 Rathdowne Street)',
     accessible: true,
     male: true,
     female: true,
@@ -245,7 +231,7 @@ Toilet.reopenClass({
   },
   {
     id: "17",
-    title: 'Public Toilet - Franklin Street (Opposite 80 Franklin Street)',
+    title: 'Franklin Street (Opposite 80 Franklin Street)',
     accessible: true,
     male: true,
     female: true,
@@ -259,7 +245,7 @@ Toilet.reopenClass({
   },
   {
     id: "18",
-    title: 'Public Toilet - Queensberry Street (Adjacent 179 Queensberry Street)',
+    title: 'Queensberry Street (Adjacent 179 Queensberry Street)',
     accessible: false,
     male: true,
     female: false,
@@ -273,7 +259,7 @@ Toilet.reopenClass({
   },
   {
     id: "19",
-    title: 'Public Toilet - Parliament Station  - City Loop ',
+    title: 'Parliament Station  - City Loop ',
     accessible:  true,
     male: true,
     female: false,
@@ -287,7 +273,7 @@ Toilet.reopenClass({
   },
   {
     id: "20",
-    title: 'Public Toilet - Powlett  Street Reserve - East Melbourne ',
+    title: 'Powlett  Street Reserve - East Melbourne ',
     accessible:  true,
     male: true,
     female: false,
@@ -302,7 +288,7 @@ Toilet.reopenClass({
   },
   {
     id: "21",
-    title: 'Public Toilet - Gosch\'s Paddock, Yarra Park ',
+    title: 'Gosch\'s Paddock, Yarra Park ',
     accessible:  true,
     male: true,
     female: true,
