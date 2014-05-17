@@ -34,6 +34,21 @@ Toilet.reopenClass({
     drinkingWater: false,
     geoX: -37.8203421290366,
     geoY: 144.964219727982
+  },
+  {
+    id: "2",
+    title: 'Melbourne Central Station',
+    accessible: true,
+    male: true,
+    female: true,
+    unisex: true,
+    babyChange: true,
+    sharps: false,
+    showers: false,
+    sanitaryDisposal: false,
+    drinkingWater: false,
+    geoX: -37.8100,
+    geoY: 144.9628
   }
 ]});
 
