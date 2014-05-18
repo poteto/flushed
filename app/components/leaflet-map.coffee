@@ -15,6 +15,7 @@ LeafletMapComponent = Ember.Component.extend
 
   locationDidChange: Em.observer(->
     @getCurrentLocation()
+    @drawMapLater()
   , 'currentLocation')
 
   didInsertElement: ->
