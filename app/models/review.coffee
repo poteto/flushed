@@ -15,10 +15,10 @@ Review.reopenClass
     },
     {
       id: '2'
-      user: 'Eamon Mitchell'
+      user: 'Marissa Tomei'
       toilet: 11
       createdAt: new Date(2014, 4, 21)
-      text: '0403 569 031 for gdood time'
+      text: 'Scent of jasmine throughout while I was doing a number two. Would go again.'
     }
   ]
 
