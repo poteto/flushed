@@ -12,6 +12,13 @@ Review.reopenClass
       toilet: 1
       createdAt: new Date(2014, 4, 18)
       text: 'Avoid the last cubicle on the right, the flush never works!'
+    },
+    {
+      id: '2'
+      user: 'Marissa Tomei'
+      toilet: 11
+      createdAt: new Date(2014, 4, 21)
+      text: 'Scent of jasmine throughout while I was doing a number two. Would go again.'
     }
   ]
 

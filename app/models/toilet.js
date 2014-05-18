@@ -172,7 +172,8 @@ Toilet.reopenClass({
     sanitaryDisposal: false,
     geoX: 37.8078639954478,
     geoY: 144.966424039606,
-    rating: 75
+    rating: 75,
+    reviews: [2]
   },
   {
     id: '12',
