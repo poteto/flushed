@@ -1,27 +1,56 @@
-<h2>{{model.title}}</h2>
-<small>{{model.geoX}}, {{model.geoY}}</small>
+<div class="animated fadeIn">
+  <h2>{{model.title}}</h2>
+  <small>{{model.geoX}}, {{model.geoY}}</small>
 
-<hr>
+  <hr>
 
-<ul class="list-unstyled">
-  <h4>Facilities</h4>
-  <li>
-    {{#if model.male}}
-      <i class="fa fa-male fa-lg"></i>
-      Yes
-    {{/if}}
-  </li>
-  <li>
-    {{#if model.female}}
-      <i class="fa fa-female fa-lg"></i>
-      Yes
-    {{/if}}
-  </li>
-  <li>
-    {{#if model.babyChange}}
-      <i class="fa fa-child fa-lg"></i>
-      Yes
-    {{/if}}
-  </li>
-</ul>
+  <ul class="list-unstyled">
+    <h4>Facilities</h4>
+    <li>
+      {{#if model.male}}
+        <i class="fa fa-male fa-lg"></i>
+        Yes
+      {{/if}}
+    </li>
+    <li>
+      {{#if model.female}}
+        <i class="fa fa-female fa-lg"></i>
+        Yes
+      {{/if}}
+    </li>
+    <li>
+      {{#if model.babyChange}}
+        <i class="fa fa-child fa-lg"></i>
+        Yes
+      {{/if}}
+    </li>
+  </ul>
 
+  <form role="form" class="form">
+    <h4>Leave a review!</h4>
+    <div class="form-group">
+      <label for="review-user">Your Name</label>
+      {{input id="review-user" class="form-control input-lg" valueBinding="review-user"}}
+    </div>
+    <div class="form-group">
+      <label for="review-text">Review</label>
+      {{textarea id="review-text" class="form-control input-lg" valueBinding="review-text" action='post'}}
+    </div>
+    <button class="btn btn-primary" {{action 'post'}}>Post</button>
+  </form>
+
+  <hr>
+
+  <h3>Reviews</h3>
+  {{#each review in reviews}}
+    <div class="row review">
+      <div class="col-xs-12">
+        <h5>{{review.user}}</h5>
+        <p>{{review.text}}</p>
+        <small class="details">
+          {{format-time review.createdAt}}
+        </small>
+      </div>
+    </div>
+  {{/each}}
+</div>

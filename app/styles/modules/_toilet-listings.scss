@@ -22,6 +22,9 @@ li.toilet-li {
     i {
       color: $black;
     }
+    .details {
+      color: $black;
+    }
   }
   i {
     color: $c-gray-medium;
@@ -61,4 +64,20 @@ li.toilet-li {
   button.btn {
     background: $flushblue;
   }
+}
+
+.details {
+  margin-top: $default-margin/2;
+  &:first-child {
+    padding-left: 0;
+  }
+  color: $c-gray-medium;
+  i {
+    color: $c-gray-medium;
+  }
+}
+
+.row.review {
+  padding-bottom: $default-margin/2;
+  border-bottom: 2px solid $flushgrey;
 }

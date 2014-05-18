@@ -1,5 +1,9 @@
 ToiletItemController = Ember.ObjectController.extend
 
+  reviewCount: (->
+    @get('model.reviews.length')
+  ).property 'model.reviews.@each'
+
   actions:
     upvote: ->
       model = @get('model')

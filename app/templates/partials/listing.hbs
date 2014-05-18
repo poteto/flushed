@@ -1,0 +1,56 @@
+<ul class="animated fadeIn margin-8">
+  {{#each toilet in arrangedContent itemController="toilet/item"}}
+    <li class="toilet-li">
+      {{#link-to 'toilet.show' toilet.id class="toilet-title"}}
+        {{toilet.title}}
+      {{/link-to}}
+      <div class="rating-container pull-right">
+        <i class="fa fa-sort-up fa-lg" {{action 'upvote'}}></i>
+        <h5 class="toilet-rating">{{toilet.rating}}</h5>
+        <i class="fa fa-sort-down fa-lg" {{action 'downvote'}}></i>
+      </div>
+      <div class="row">
+        <div class="col-xs-5 details">
+          <p>
+            {{#if toilet.accessible}}
+              <i class="fa fa-wheelchair"></i>
+              Accessible
+            {{/if}}
+          </p>
+          <p>
+            {{#if toilet.male}}
+              <i class="fa fa-male"></i>
+              Male toilets
+            {{/if}}
+          </p>
+          <p>
+            {{#if toilet.female}}
+              <i class="fa fa-female"></i>
+              Female toilets
+            {{/if}}
+          </p>
+        </div>
+        <div class="col-xs-5 details">
+          <p>
+            <i class="fa fa-comments"></i>
+            {{pluralise-word toilet.reviewCount 'review'}}
+          </p>
+          <p>
+            {{#if toilet.babyChange}}
+              <i class="fa fa-child"></i>
+              Babychange
+            {{/if}}
+          </p>
+          <p>
+            {{#if toilet.sanitaryDisposal}}
+              <i class="fa fa-check-square"></i>
+              Sanitary Disposal
+            {{/if}}
+          </p>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+</ul>
+
+

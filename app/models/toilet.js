@@ -1,3 +1,5 @@
+import Review from 'appkit/models/review';
+
 var attr = DS.attr,
     hasMany = DS.hasMany,
     belongsTo = DS.belongsTo;
@@ -9,18 +11,20 @@ var Toilet = DS.Model.extend({
   female: attr('boolean'),
   unisex: attr('boolean'),
   babyChange: attr('boolean'),
-  rating: attr('number', {defaultValue: 0}),
+  rating: attr('number', { defaultValue: 0 }),
   sharps: attr('boolean'),
   showers: attr('boolean'),
   sanitaryDisposal: attr('boolean'),
   geoX: attr('number'),
-  geoY: attr('number')
+  geoY: attr('number'),
+  reviews: hasMany('review', { async: true }),
+
 });
 
 Toilet.reopenClass({
   FIXTURES: [
   {
-    id: "1",
+    id: '1',
     title: 'Southbank Promenade (opposite Esso House)',
     accessible: true,
     male: true,
@@ -32,10 +36,11 @@ Toilet.reopenClass({
     sanitaryDisposal: false,
     geoX: -37.8203421290366,
     geoY: 144.964219727982,
-    rating: 84
+    rating: 84,
+    reviews: [1]
   },
   {
-    id: "3",
+    id: '3',
     title: 'Flinders Street Station',
     accessible: true,
     male: true,
@@ -50,7 +55,7 @@ Toilet.reopenClass({
     rating: 64
   },
   {
-    id: "4",
+    id: '4',
     title: 'Lonsdale Street (Opposite 88 Lonsdale Street)',
     accessible: true,
     male: true,
@@ -65,7 +70,7 @@ Toilet.reopenClass({
     rating: 56
   },
   {
-    id: "5",
+    id: '5',
     title: 'Flagstaff Gardens (cnr William & Dudley)',
     accessible: true,
     male: true,
@@ -80,7 +85,7 @@ Toilet.reopenClass({
     rating: 78
   },
   {
-    id: "6",
+    id: '6',
     title: 'Saint Mangos Lane, The Palladio (New Quay)',
     accessible: true,
     male: true,
@@ -95,7 +100,7 @@ Toilet.reopenClass({
     rating: 82
   },
   {
-    id: "7",
+    id: '7',
     title: 'Public Toilet -Southern Cross Station',
     accessible: true,
     male: true,
@@ -110,7 +115,7 @@ Toilet.reopenClass({
     rating: 77
   },
   {
-    id: "8",
+    id: '8',
     title: 'Alexandra Gardens (Riverslide Skate Park)',
     accessible: true,
     male: true,
@@ -125,7 +130,7 @@ Toilet.reopenClass({
     rating: 92
   },
   {
-    id: "9",
+    id: '9',
     title: 'Birrarung Marr Speakers Corner',
     accessible: true,
     male: true,
@@ -140,7 +145,7 @@ Toilet.reopenClass({
     rating: 62
   },
   {
-    id: "10",
+    id: '10',
     title: 'Exhibition Street (Opposite 242 Exhibition Street)',
     accessible: false,
     male: true,
@@ -155,7 +160,7 @@ Toilet.reopenClass({
     rating: 74
   },
   {
-    id: "11",
+    id: '11',
     title: 'Queen Victoria Market (465 Queen Street)',
     accessible: true,
     male: true,
@@ -170,7 +175,7 @@ Toilet.reopenClass({
     rating: 75
   },
   {
-    id: "12",
+    id: '12',
     title: 'Corner of King & Lonsdale Streets',
     accessible: true,
     male: true,
@@ -185,7 +190,7 @@ Toilet.reopenClass({
     rating: 78
   },
   {
-    id: "13",
+    id: '13',
     title: 'Melbourne Central Station',
     accessible: true,
     male: true,
@@ -200,7 +205,7 @@ Toilet.reopenClass({
     rating: 72
   },
   {
-    id: "14",
+    id: '14',
     title: 'Gordon Reserve (74-108 Spring Street)',
     accessible: true,
     male: false,
@@ -215,7 +220,7 @@ Toilet.reopenClass({
     rating: 84
   },
   {
-    id: "15",
+    id: '15',
     title: 'Treasury Gardens (Store and Toilet)',
     accessible: true,
     male: true,
@@ -230,7 +235,7 @@ Toilet.reopenClass({
     rating: 60
   },
   {
-    id: "16",
+    id: '16',
     title: 'Carlton Gardens South (Opposite 39 Rathdowne Street)',
     accessible: true,
     male: true,
@@ -245,7 +250,7 @@ Toilet.reopenClass({
     rating: 90
   },
   {
-    id: "17",
+    id: '17',
     title: 'Franklin Street (Opposite 80 Franklin Street)',
     accessible: true,
     male: true,
@@ -260,7 +265,7 @@ Toilet.reopenClass({
     rating: 79
   },
   {
-    id: "18",
+    id: '18',
     title: 'Queensberry Street (Adjacent 179 Queensberry Street)',
     accessible: false,
     male: true,
@@ -275,8 +280,8 @@ Toilet.reopenClass({
     rating: 71
   },
   {
-    id: "19",
-    title: 'Parliament Station  - City Loop ',
+    id: '19',
+    title: 'Parliament Station  - City Loop',
     accessible:  true,
     male: true,
     female: false,
@@ -290,8 +295,8 @@ Toilet.reopenClass({
     rating: 64
   },
   {
-    id: "20",
-    title: 'Powlett  Street Reserve - East Melbourne ',
+    id: '20',
+    title: 'Powlett  Street Reserve - East Melbourne',
     accessible:  true,
     male: true,
     female: false,
@@ -306,8 +311,8 @@ Toilet.reopenClass({
     rating: 56
   },
   {
-    id: "21",
-    title: 'Gosch\'s Paddock, Yarra Park ',
+    id: '21',
+    title: 'Gosch\'s Paddock, Yarra Park',
     accessible:  true,
     male: true,
     female: true,

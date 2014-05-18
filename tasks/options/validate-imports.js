@@ -19,7 +19,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'app',
-      src: ['**/*.js']
+      src: ['**/*.[js|coffee]']
     }]
   },
 
@@ -37,11 +37,11 @@ module.exports = {
     files: [{
       expand: true,
       cwd: '.',
-      src: ['tests/**/*.js']
+      src: ['tests/**/*.js|coffee']
     }, {
       expand: true,
       cwd: '.',
-      src: ['app/**/*.js']
+      src: ['app/**/*.js|coffee']
     }]
   }
 };
