@@ -7,6 +7,19 @@
       </div>
     </form>
 
+    {{#link-to 'toilet.index' class="toilet-filter-btn"}}
+      <button class="btn btn-info">Everything</button>
+    {{/link-to}}
+    {{#link-to 'toilet.accessible' class="toilet-filter-btn"}}
+      <button class="btn btn-info">Accessible</button>
+    {{/link-to}}
+    {{#link-to 'toilet.babychange' class="toilet-filter-btn"}}
+      <button class="btn btn-info">Babychange</button>
+    {{/link-to}}
+    {{#link-to 'toilet.unisex' class="toilet-filter-btn"}}
+      <button class="btn btn-info">Unisex</button>
+    {{/link-to}}
+
   {{outlet}}
 
   </div>
