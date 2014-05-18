@@ -25,7 +25,8 @@ ToiletNewController = Ember.Controller.extend
       }
 
       newToilet.save()
-      .then ->
+      .then =>
         toastr.success 'Saved'
+        @transitionTo 'toilet.index'
 
 `export default ToiletNewController`
