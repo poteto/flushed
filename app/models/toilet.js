@@ -291,7 +291,7 @@ Toilet.reopenClass({
     sharps: false,
     showers: false,
     sanitaryDisposal: false,
-    geoX: 37.8114,
+    geoX: -37.8114,
     geoY: 144.9731,
     rating: 64
   },
