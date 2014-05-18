@@ -41,12 +41,19 @@ h3 {
 	}
 }
 
-// Form Inputs, etc. 
+// Form Inputs, etc.
 
-input, textarea, select { // using bad code to overwrite globally //
-	border-radius: 0 !important;
-	border: 2px solid $flushgrey !important; 
-	box-shadow: none !important;
+.form-control {
+	border-radius: 0;
+	border: 2px solid $flushgrey;
+	box-shadow: none;
+  &:hover {
+    border-color: $c-gray;
+  }
+  &:active, &:focus {
+    border-color: $flushblue;
+    box-shadow: none;
+  }
 }
 
 li {
@@ -54,7 +61,7 @@ li {
 }
 
 
-// Buttons 
+// Buttons
 
 .btn {
 
@@ -74,7 +81,7 @@ li {
 }
 
 
-// Pushing Margins 
+// Pushing Margins
 
 .margin-2 {
 	margin-top: 2%;
@@ -88,7 +95,7 @@ li {
 	margin-top: 8%;
 }
 
-// Center 
+// Center
 
 .center-align {
 	text-align: center;
