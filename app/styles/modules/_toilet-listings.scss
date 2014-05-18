@@ -56,3 +56,9 @@ li.toilet-li {
     }
   }
 }
+
+.toilet-filter-btn.active {
+  button.btn {
+    background: $flushblue;
+  }
+}
