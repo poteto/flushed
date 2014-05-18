@@ -1,7 +1,7 @@
 LeafletMapComponent = Ember.Component.extend
   classNames: ['leaflet-wrapper']
   map: ''
-  currentLocation: []
+  currentLocation: [-37.82397, 144.991078]
 
   getCurrentLocation: ->
     return if (!navigator.geolocation)
@@ -9,14 +9,13 @@ LeafletMapComponent = Ember.Component.extend
       @set 'currentLocation', [position.coords.latitude, position.coords.longitude]
 
   contentDidChange: Em.observer(->
-    this.get('map').remove()
+    @get('map').remove()
     @drawMapLater()
   , 'content.@each')
 
-  locationDidChange: Em.observer(->
-    @getCurrentLocation()
-    @drawMapLater()
-  , 'currentLocation')
+  locationDidChange: (->
+    @get('map').setView(@get('currentLocation'), 13)
+  ).observes 'currentLocation'
 
   didInsertElement: ->
     @_super()
@@ -24,13 +23,11 @@ LeafletMapComponent = Ember.Component.extend
     @drawMapLater()
 
   drawMapLater: ->
-    Em.run.later this, (->
+    Em.run.next =>
       @drawMap()
-    ), 1000
 
   drawMap: ->
-    current = @getWithDefault 'currentLocation', [-37.814107, 144.96328]
-    @set('map', L.map('map').setView(current, 13))
+    @set('map', L.map('map').setView([-37.82397, 144.991078], 13))
     map = @get('map')
     content = @get('content')
 
