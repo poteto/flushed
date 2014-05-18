@@ -10,7 +10,7 @@ LeafletMapComponent = Ember.Component.extend
 
   contentDidChange: Em.observer(->
     @get('map').remove()
-    @drawMapLater()
+    @drawMapLater(@get('currentLocation'))
   , 'content.@each')
 
   locationDidChange: (->
@@ -22,12 +22,13 @@ LeafletMapComponent = Ember.Component.extend
     @getCurrentLocation()
     @drawMapLater()
 
-  drawMapLater: ->
+  drawMapLater: (loc) ->
     Em.run.next =>
-      @drawMap()
+      @drawMap(loc)
 
-  drawMap: ->
-    @set('map', L.map('map').setView([-37.82397, 144.991078], 13))
+  drawMap: (loc) ->
+    location = loc || [-37.82397, 144.991078]
+    @set('map', L.map('map').setView(location, 13))
     map = @get('map')
     content = @get('content')
 
