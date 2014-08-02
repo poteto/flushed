@@ -1,4 +1,4 @@
-(Flushed.co) 0.0.1
+[Flushed](http://www.flushed.co/) 0.0.1
 
 # Ember App Kit [![Build Status](https://travis-ci.org/stefanpenner/ember-app-kit.png?branch=master)](https://travis-ci.org/stefanpenner/ember-app-kit)
 
